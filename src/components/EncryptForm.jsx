@@ -19,7 +19,7 @@ export default function EncryptForm() {
   function handleSubmit(e) {
     e.preventDefault();
 
-    const url = "http://127.0.0.1:5000/encrypt_file";
+    const url = "https://simb-backend-d5731391e4de.herokuapp.com/encrypt_file";
     const formData = new FormData();
 
     if (key.current.value == confirmKey.current.value) {

@@ -20,7 +20,7 @@ export default function DecryptForm() {
     try {
       await verifyFileSignature(file[0]);
       setError("");
-      const url = "http://127.0.0.1:5000/decrypt_file";
+      const url = "https://simb-backend-d5731391e4de.herokuapp.com/decrypt_file";
       const formData = new FormData();
 
       formData.append("file", file[0]);
